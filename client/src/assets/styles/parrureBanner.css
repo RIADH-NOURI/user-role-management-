@@ -1,0 +1,195 @@
+/* styles/parrureBanner.css */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin-top: 100px; /* جعل الحاوية تحتل كامل ارتفاع الصفحة */
+}
+
+.parrure-banner {
+    position: relative;
+    width: 90%; /* عرض المربع */
+    height: 100%; /* ارتفاع المربع */
+    overflow: hidden;
+}
+
+.parrure-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.parrure-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.overlay-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2; /* تأكد من أن المحتوى فوق الصورة */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.text-content {
+    text-align: left;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    transition: all 1s ease;
+}
+.text-content.active{
+    top: 200px;
+    left: 20px;
+}
+
+.find-text {
+    font-size: 48px; /* حجم أكبر لكلمة "Trouver" */
+    color: #e91e63; /* لون خاص لكلمة "Trouver" */
+}
+
+.accessories-text {
+    font-size: 36px; /* حجم أصغر لكلمة "notre accessoires" */
+    color: #ffffff; /* لون خاص لكلمة "notre accessoires" */
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.discover-button {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: var(--primary-color); /* لون الزر */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.discover-button.active{
+    bottom: 20px;
+    right: 20%;
+}
+.discover-button:hover{
+    background: transparent;
+    color: var(--primary-color);
+    border: var(--primary-color) 1px solid;
+}
+
+.social-media-banner {
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+    display: flex;
+}
+
+.social-icon-banner i {
+    display: flex;
+    margin-left: 10px;
+        text-align: center;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    border-radius: 50%;
+    background:var(--primary-color);
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.social-icon-banner .fa-brands.fa-facebook:hover {
+  background: #3b5998;
+}
+
+.social-icon-banner .fa-brands.fa-instagram:hover {
+  background: rgb(226, 14, 14)
+}
+
+.social-icon-banner .fa-brands.fa-tiktok:hover {
+  background: black;
+  
+}
+@media  screen and (min-width: 768px) and ( max-width: 1024px) {
+    .text-content {
+        text-align: left;
+        position: absolute;
+        top: 50px;
+        left:20px;
+    }
+    
+    .find-text {
+        font-size: 50px; /* حجم أكبر لكلمة "Trouver" */
+    }
+    
+    .accessories-text {
+        font-size: 40px;
+    }
+    
+    .discover-button {
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70%;
+    }
+   
+    
+    .social-media-banner {
+        bottom: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .social-icon-banner i {   
+      padding: 15px;
+      font-size: 0.7em;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container{
+         margin: 0;
+    }
+   
+    .text-content {
+        text-align: left;
+        position: absolute;
+        top: 50px;
+        left:20px;
+    }
+    
+    .find-text {
+        font-size: 35px; /* حجم أكبر لكلمة "Trouver" */
+    }
+    
+    .accessories-text {
+        font-size: 30px;
+    }
+    
+    .discover-button {
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70%;
+    }
+   
+    
+    .social-media-banner {
+        bottom: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .social-icon-banner i {   
+      padding: 15px;
+      font-size: 0.7em;
+    }
+}

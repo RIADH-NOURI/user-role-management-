@@ -1,0 +1,22 @@
+.new-arrival {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.new-product {
+  text-align: center;
+}
+.new-product button {
+  padding: 10px 15px;
+  border: 1px solid grey;
+  outline: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background: none;
+  transition: all 0.5s ease;
+}
+
+.new-product button:hover {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
