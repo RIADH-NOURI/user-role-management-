@@ -8,7 +8,7 @@ const SearchInput = ({ placeholder, value, onChange }) => {
         placeholder={placeholder}
         value={value}
         onChange={onChange}
-        className="p-2 flex-grow mr-2 outline-none"
+        className="p-2 flex-grow mr-2.5 outline-none"
       />
       <button className="p-2 rounded-md bg-amber-300 text-white hover:bg-amber-400 transition-colors">
         <Search className="h-6 w-6" />
