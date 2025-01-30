@@ -10,7 +10,7 @@ const SearchInput = ({ placeholder, value, onChange }) => {
         onChange={onChange}
         className="p-2 flex-grow mr-2 outline-none"
       />
-      <button className="p-2 rounded-md bg-amber-300 text-white hover:bg-amber-400 transition-colors">
+      <button className="p-2 rounded-md bg-blue-600 text-white hover:bg-blue-600 transition-colors">
         <Search className="h-6 w-6" />
       </button>
     </div>
