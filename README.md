@@ -15,11 +15,11 @@ Welcome to the **User Role Management API** repository, a secure RESTful API tha
 
 ## Project Overview
 
-The **User Role Management API** project offers a secure backend solution for managing users and their roles. It includes **role-based access control (RBAC)**, allowing different users to have different access levels based on their roles.
+The **User Role Management API** project offers a backend solution for managing users and their roles. It includes **role-based access control**, allowing different users to have different access levels based on their roles.
 
 ## Functionalities
 
-- Role-based access control (RBAC) for different user roles
+- Role-based access control for different user roles
 
 ## Technologies
 
@@ -27,13 +27,12 @@ The **User Role Management API** project offers a secure backend solution for ma
 
 - **Framework**: Node.js, Express.js
 - **Database**: PostgreSQL (using Prisma ORM)
-- **Role Management**: Custom role management using **Redux Toolkit** and **RTK Query** (for managing APIs)
 
 ### Frontend (Example Usage)
 
 - **HTTP Client**: Axios
 - **Framework**: React (with **Redux Toolkit** for state management)
-- **Database Interaction**: **RTK Query** for managing API calls and **PostgreSQL** for data storage
+- **Database Interaction**: **RTK Query** for managing API calls 
 
 ## Installation
 
