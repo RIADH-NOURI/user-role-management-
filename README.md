@@ -43,7 +43,7 @@ To set up the **User Role Management API** project locally, follow these steps:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/RIADH-NOURI/prisma-redux-toolkit-prj.git
+   git clone https://github.com/RIADH-NOURI/user-role-management.git
    cd prisma-redux-toolkit-prj/backend
 
    2. **Install dependencies:**
